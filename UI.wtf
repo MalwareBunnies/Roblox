@@ -99,7 +99,7 @@ local library = (function()
         local window = {}
 
         local screen = CreateInstance("ScreenGui", parent, {
-            Name = "lib_" .. window_id,
+            Name = "BunnyLIB",
             ZIndexBehavior = Enum.ZIndexBehavior.Sibling
         })
 
