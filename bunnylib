@@ -1,3 +1,6 @@
+if game:GetService("CoreGui"):FindFirstChild("Bunny") then
+  game:GetService("CoreGui").Bunny:Destroy()
+end
 if not game:IsLoaded() then
 	game.Loaded:wait() 
 end
@@ -30,8 +33,8 @@ function library:CreateWindow(name, version, icon)
 	for i = 1, math.random(3,20) do
 		RandomString = RandomString..string.char(math.random(97,122))
 	end
-	ProtectInstance(MyGui)
-	ProtectInstance(Window)
+	--ProtectInstance(MyGui)
+	--ProtectInstance(Window)
 
 	MyGui.Name = 'Bunny'
 	MyGui.Parent = cloneref(game:GetService("CoreGui"))
@@ -1743,5 +1746,4 @@ function library:CreateWindow(name, version, icon)
 	end
 	return tabs
 end
-
 return library
