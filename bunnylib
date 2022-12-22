@@ -1,8 +1,6 @@
-if game:GetService("CoreGui"):FindFirstChild("Bunny") then
-  game:GetService("CoreGui").Bunny:Destroy()
-end
-if not game:IsLoaded() then
-	game.Loaded:wait() 
+local ui = game:GetService("CoreGui"):FindFirstChild("Bunny")
+if ui then
+    ui:Destroy()
 end
 
 -- extra credits to twink marie
